@@ -7,10 +7,10 @@ public class Scannerexample {
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.println("enter you are name");
-		String name=sc.nextLine();
+		sc.nextLine();
 		
 		System.out.println("enter the rollnumber");
-		int roll=sc.nextInt();
+		sc.nextInt();
 		sc.close();
 	}
 	}
