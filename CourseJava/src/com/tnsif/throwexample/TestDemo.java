@@ -1,6 +1,6 @@
 package com.tnsif.throwexample;
 
-import java.util.Scanner;
+import java.util.Scanner;   
 
 public class TestDemo {
 public static void main(String[] args) {
