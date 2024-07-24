@@ -12,7 +12,7 @@ public class Jdbcselect {
 		 
 		
 		try {
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hyd11","root","root");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sri_indu","root","manager");
 			
 			 
 			
@@ -20,7 +20,7 @@ public class Jdbcselect {
 			
 			 
 			
-			String strselect="Select booktitle,price,qty from books";
+			String strselect="Select booktitle,bookprice,bookqun from book";
 			
 			 
 			ResultSet rst=st.executeQuery(strselect);
@@ -28,10 +28,10 @@ public class Jdbcselect {
 			int rowcount=0;
 			while(rst.next()) {
 				String booktitle=rst.getString("booktitle");
-				int price=rst.getInt("price");
-				int qty=rst.getInt("qty");
+				int bookprice=rst.getInt("bookprice");
+				int bookqun=rst.getInt("bookqun");
 				
-				System.out.println(booktitle+" "+price+" "+qty);
+				System.out.println(booktitle+" "+bookprice+" "+bookqun);
 				++rowcount;
 			}
 			

@@ -11,13 +11,13 @@ public static void main(String[] args) {
 		
 		 
 		try {
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hyd11","root","root");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sri_indu","root","manager");
 			
  			
 			Statement st=conn.createStatement();
 			
 			 
-			String strselect="select booktitle,price,qty from books";
+			String strselect="select booktitle,bookprice,bookqun from book";
 			
 			System.out.println("the sql stament is"+strselect);
 			
@@ -28,10 +28,10 @@ public static void main(String[] args) {
 			int rowcout=0;
 			while(rst.next()) {
 				String booktitle=rst.getString("booktitle");
-				int price=rst.getInt("price");
-				int qty=rst.getInt("qty");
+				int bookprice=rst.getInt("bookprice");
+				int bookqun=rst.getInt("bookqun");
 				
-				System.out.println(booktitle+" "+price+" "+qty);
+				System.out.println(booktitle+" "+bookprice+" "+bookqun);
 				++rowcout;
 			}
 			}
