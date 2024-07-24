@@ -3,18 +3,16 @@ package com.tnsif.throwexample;
 import java.util.Scanner;   
 
 public class TestDemo {
-public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("enter reollnum");
-	int rollnum=sc.nextInt();
-	if(rollnum<0) {
-		throw new ArithmeticException("roll num cannot be nrgative");
-		
-	}
-	else {
-		System.out.println("valid roll num");
-	}
-	
-	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the rollno");
+		int rollno=sc.nextInt();
+		if(rollno<0) {
+			throw new ArithmeticException("ROLL NUMBER CANNOT B NEGative");
+		}
+		else {
+			System.out.println("valid roll no");
+		}
+
 }
 }
