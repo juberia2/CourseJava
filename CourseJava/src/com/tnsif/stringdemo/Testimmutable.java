@@ -6,7 +6,7 @@ public class Testimmutable {
 
 		
 		String s="sachin";
-		//s.concat("tendulkar");
+		 
 		System.out.println(s);
 		s=s.concat("tendulkar");
 		System.out.println(s);
